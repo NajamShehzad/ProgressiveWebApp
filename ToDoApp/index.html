@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do List</title>
+    <link rel="manifest" href="manifest.json">
+    <style>
+        .item {
+            box-shadow: 0px 0px 10px;
+            margin-top: 10px;
+            margin-left: -5%;
+            line-height: 25px;
+        }
+
+        /* h1 {
+            padding-left: 35%;
+        }
+
+        form {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+            box-shadow: 0px 0px 15px;
+        }
+
+        #output {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+
+        } */
+
+        /* #input1 {
+            margin-left: 12%;
+        }
+
+        #input2 {
+            margin-left: 1%;
+            margin-top: 10px;
+            width: 26%;
+            resize: none;
+        } */
+
+        form {
+            background-color: rgb(38, 252, 102)
+        }
+
+        body {
+            background-color: rgb(107, 245, 153);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 150%;
+        }
+
+        /* .sub {
+            margin-top: 10px;
+
+            font-size: 110%;
+        }
+
+        #sub1 {
+            margin-left: 35%;
+        }
+
+        #btn1 {
+            background-color: aliceblue;
+            color: red;
+            font-size: 110%;
+            margin-left: 60%;
+            margin-bottom: 10px;
+        }
+
+        ol {
+            list-style-position: inside;
+        }
+
+        label {
+            margin-left: 18%;
+        } */
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+</head>
+
+<body onload="defaultList()">
+    <div id="container">
+        <form action="JavaScript:void(0)" onsubmit="todo(this)" method="POST">
+            <h1>ToDo List</h1>
+            <div class="form-group align-middle">
+                <label>Title:</label>
+                <input type="text" class="form-control" name="najam" value="" id="input1">
+            </div>
+            <div class="form-group">
+                <br>
+                <label>Discription :</label>
+                <textarea class="form-control" id="input2"></textarea>
+                <br>
+            </div>
+            <input type="submit" id="sub1" class="btn btn-primary" class="sub">
+            <input type="button" class="sub" value="Clear All" onclick="clearf()">
+        </form>
+    </div>
+    <div id="output">
+        <ol id="list">
+
+        </ol>
+
+    </div>
+    <script src="app.js">
+
+    </script>
+
+</body>
+
+</html>
